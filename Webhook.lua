@@ -88,4 +88,4 @@ task.spawn(function() while task.wait(SakataTables.value.WebCooldown) do
     end
 end end) end
 
-return print("Success!")
+return SakataMain
