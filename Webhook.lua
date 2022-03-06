@@ -1,4 +1,5 @@
 --Sakata
+function SakataMain(Window)
 local sakata = Window:CreateTab("Sakata's Functions")
 
 local SakataTables = {
@@ -85,6 +86,6 @@ task.spawn(function() while task.wait(SakataTables.value.WebCooldown) do
         }
         local Post = req({Url = getgenv().WebHook,  Method = 'POST', Headers = { ['Content-Type'] = 'application/json' }, Body = game:GetService('HttpService'):JSONEncode(data)})
     end
-end end)
+end end) end
 
 return print("Success!")
